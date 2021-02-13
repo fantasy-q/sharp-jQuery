@@ -4,7 +4,7 @@
 
 【2012 年第 7 月第 2 版】人民邮电出版社
 
-## [目录](http://fantasy-q.github.io/sharp-jQuery){:target="_blank"}
+## <a href="http://fantasy-q.github.io/sharp-jQuery" target="_blank">目录</a>
 
 - 第 1 章   认识 jQuery
 - 第 2 章   jQuery 选择器
