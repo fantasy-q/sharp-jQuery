@@ -328,7 +328,10 @@ const SharpJQuery = {
   practices: {
     title: '练习',
     content: [
-      '04-10/01-caption.html'
+      '04-10/01-caption.html',
+      '04-10/02-caption.html',
+      '04-10/03-content.html',
+      '04-10/04-list.html',
     ]
   }
 }

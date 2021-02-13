@@ -4,20 +4,20 @@
 
 【2012 年第 7 月第 2 版】人民邮电出版社
 
-## [目录](./index.html)
+## [目录](http://fantasy-q.github.io/sharp-jQuery)
 
-第 1 章   认识 jQuery
-第 2 章   jQuery 选择器
-第 3 章   jQuery 中的 DOM 操作
-第 4 章   jQuery 中的事件和动画
-第 5 章   jQuery 对表单、表格的操作及更多应用
-第 6 章   jQuery 与 Ajax 的应用
-第 7 章   jQuery 插件的使用和写法
-第 8 章   用 jQuery 打造个性网站
-第 9 章   jQuery Mobile
-第 10 章  jQuery 各个版本的变化
-第 11 章  jQuery 性能优化和技巧
-附录
+- 第 1 章   认识 jQuery
+- 第 2 章   jQuery 选择器
+- 第 3 章   jQuery 中的 DOM 操作
+- 第 4 章   jQuery 中的事件和动画
+- 第 5 章   jQuery 对表单、表格的操作及更多应用
+- 第 6 章   jQuery 与 Ajax 的应用
+- 第 7 章   jQuery 插件的使用和写法
+- 第 8 章   用 jQuery 打造个性网站
+- 第 9 章   jQuery Mobile
+- 第 10 章  jQuery 各个版本的变化
+- 第 11 章  jQuery 性能优化和技巧
+- 附录
 
 ## 总结
 
@@ -33,8 +33,9 @@
   ```js
   /* sciprts/jQuery.js */
   // 基本上所有示例代码都引入了 jQuery.js
-  // 因此只要在里面把 alert 覆盖为 console.log
-  // 而不必修改每个文件的 alert
-  const alert = console.log;
+  // 在里面把原有的 alert 保存到另一个变量
+  // 这样不必修改每个文件的 alert, 需要时也可以换回来
+  const actualAlertFunc = window.alert;
+  window.alert = console.log;
   ```
 
