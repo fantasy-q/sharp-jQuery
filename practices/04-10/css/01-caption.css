@@ -1,0 +1,64 @@
+.container div.description {
+  width: 300px;
+  position: relative;
+  left: 200px;
+  bottom: 225px;
+}
+
+.caption {
+  height: 525px;
+  background: url(../img/btn_red.gif) no-repeat 0 0;
+}
+
+.caption h2 {
+  float: left;
+  width: 595px;
+  height: 525px;
+  background: url(../img/btn_green.gif) no-repeat;
+  /* 隐藏文本 */
+  text-indent: -9999px;
+}
+
+.caption .cartoon {
+  background-position: 0 -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.caption-a {
+  height: 35px;
+  background: url(../img/btn_red.gif) no-repeat 0 0;
+}
+
+.caption-b {
+  height: 135px;
+  background: url(../img/btn_red.gif) no-repeat 0 0;
+}
+
+.caption-c {
+  height: 235px;
+  background: url(../img/btn_red.gif) no-repeat 0 0;
+}
+
+.caption-d {
+  height: 335px;
+  background: url(../img/btn_red.gif) no-repeat 0 0;
+}
+
+.caption-e {
+  height: 425px;
+  background: url(../img/btn_red.gif) no-repeat 0 0;
+}
+
+.caption-f {
+  height: 525px;
+  background: url(../img/btn_red.gif) no-repeat 0 0;
+}
