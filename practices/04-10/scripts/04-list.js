@@ -7,13 +7,15 @@ $(function () {
   var $v_content = $parent.find("div.v_content"); //寻找到“视频内容展示区域”外围的DIV元素
   var v_width = $v_content.width();
   var len = $v_content_list.find("li").length;
+  console.log('list.length',len);
   var page_count = Math.ceil(len / i);   //只要不是整数，就往大的方向取最小的整数
+  console.log('page_count', page_count);
 
   //向后 按钮
   $("span.next").click(function () {    //绑定click事件
-
+    console.log('click next');
     if (!$v_content_list.is(":animated")) {    //判断“视频内容展示区域”是否正在处于动画
-      if (page == page_count) {  //已经到最后一个版面了,如果再向后，必须跳转到第一个版面。
+      if (page == page_count) {  //已经到最后一个版面了,如果再向后，必须跳转到第一个版面
         $v_content_list.animate({ left: '0px' }, "slow"); //通过改变left值，跳转到第一个版面
         page = 1;
       } else {
@@ -22,12 +24,12 @@ $(function () {
       }
       $parent.find("span").eq((page - 1)).addClass("current").siblings().removeClass("current");
     }
-
+    console.log('page',page);
   });
 
   //往前 按钮
   $("span.prev").click(function () {
-
+    console.log('click prev');
     if (!$v_content_list.is(":animated")) {    //判断“视频内容展示区域”是否正在处于动画
       if (page == 1) {  //已经到第一个版面了,如果再向前，必须跳转到最后一个版面。
         $v_content_list.animate({ left: '-=' + v_width * (page_count - 1) }, "slow");
@@ -38,7 +40,7 @@ $(function () {
       }
       $parent.find("span").eq((page - 1)).addClass("current").siblings().removeClass("current");
     }
-
+    console.log('page', page);
   });
 
 });

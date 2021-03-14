@@ -15,24 +15,23 @@ $(document).ready(function () {
       $li_chapter.children("h2")
         // .attr('id', 'c' + ChNumber)
         .children("a").text(Title)
-      console.log(Content);
+      // console.log(Content);
 
       /* 列表项 */ Content.forEach((path) => {
-        // console.log(key);
-        $("<a target='_blank'></a>").text(path)
-          .attr('href', `${ChPath + '/' + path}`)
-          // .attr('target', '_blank')
-          .wrap("<li></li>").parent()
-          .appendTo($li_chapter.children(".content"));
-      });
+          // console.log(key);
+          $("<a target='_blank'></a>").text(path)
+            .attr('href', `${ChPath + '/' + path}`)
+            // .attr('target', '_blank')
+            .wrap("<li></li>").parent()
+            .appendTo($li_chapter.children(".content"));
+        });
     }
   }
 
   // 2. 绑定点击事件
   $(".chapter > h2").click(function () {
-    // 显示被点击的标题, 隐藏其他标题
-    $(this).next().toggle()
-      .parent().siblings().children("ul").hide();
+      $(this).next().toggle()
+        .parent().siblings().children("ul").hide();
     // 给被点击的标题添加样式, 
     $("ul.content:visible").prev().addClass('current');
     $("ul.content:hidden").prev().removeClass('current');
